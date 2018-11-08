@@ -1,0 +1,81 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background: rgb(255, 176, 255);
+    font-size: 1rem;
+    position: relative;
+    color: white;
+}
+
+ul.nav {
+    list-style: none;
+    outline: 2px solid violet;
+    width: 40%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background: rgb(149, 191, 245);
+}
+
+li.nav__item {
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    outline: 2px double white;
+    /* display: inline-block;
+        width: 16.5%; */
+}
+
+ul.nav .subnav {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s, heigh 0.5s;
+}
+
+.nav .subnav li {
+    display: block;
+    margin: 0;
+}
+
+li:hover .subnav {
+    height: 300px;
+    opacity: 1;
+    transition: opacity 1s, heigh 0.5s;
+}
+
+.header {
+    display: flex;
+}
+
+#modal {
+    width: 200px;
+    position: absolute;
+    margin: 20px auto;
+    background: rgb(218, 163, 218);
+    outline: 2px solid rgb(78, 32, 78);
+    height: 230px;
+    padding: 20px;
+    left: 45%;
+    display: none;
+}
+
+label {
+    width: 100px;
+    display: block;
+}
+
+.btn-close {
+    margin-left: 185px;
+    margin-top: 5px;
+}
